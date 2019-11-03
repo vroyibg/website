@@ -1,10 +1,9 @@
 const path = require('path');
 
 module.exports = (env) => {
-  console.log(env);
-  const isEnvDevelopment = env.dev;
+  const isEnvDevelopment = env && env.dev;
   return {
-    entry: [isEnvDevelopment && 'react-dev-utils/webpackHotDevClient', './src/index.js'],
+    entry: [...(isEnvDevelopment ? ['react-dev-utils/webpackHotDevClient'] : []), './src/index.js'],
     output: {
       path: path.join(__dirname, 'public'),
       filename: 'bundle.js',

@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = (env) => {
   const isEnvDevelopment = env && env.dev;
@@ -15,8 +16,22 @@ module.exports = (env) => {
           exclude: /node_modules/,
           loader: 'babel-loader',
         },
+        {
+          test: /\.html$/,
+          use: [
+            {
+              loader: 'html-loader',
+            },
+          ],
+        },
       ],
     },
+    plugins: [
+      new HtmlWebPackPlugin({
+        template: './src/index.html',
+        filename: './index.html',
+      }),
+    ],
     resolve: {
       extensions: ['*', '.js', '.jsx'],
     },

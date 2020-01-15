@@ -24,6 +24,18 @@ module.exports = (env) => {
             },
           ],
         },
+        {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: './assets/[path][name].ext',
+                outputPath: './assets',
+              },
+            },
+          ],
+        },
       ],
     },
     plugins: [

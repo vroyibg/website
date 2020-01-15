@@ -7,9 +7,17 @@ const Container = styled.div`
   flex-direction: row;
 `;
 
+const NavLink = styled(Link)`
+  margin-left: 20px;
+  text-decoration: none;
+`;
+
 const RightMenu = () => (
   <Container>
-    <Link to="/about">About</Link>
+    <NavLink to="/">HOME</NavLink>
+    <NavLink to="/">ABOUT</NavLink>
+    <NavLink to="/">BLOG</NavLink>
+    <NavLink to="/">CONTACT</NavLink>
   </Container>
 );
 

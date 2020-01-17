@@ -10,6 +10,9 @@ const Container = styled.div`
 const NavLink = styled(Link)`
   margin-left: 20px;
   text-decoration: none;
+  :visited {
+    color: inherit;
+  }
 `;
 
 const RightMenu = () => (

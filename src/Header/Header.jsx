@@ -17,7 +17,7 @@ const Name = styled.div`
 
 const Header = () => (
   <Container>
-    <Name>Hai Tran</Name>
+    <Name>HAI TRAN</Name>
     <RightMenu />
   </Container>
 );

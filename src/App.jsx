@@ -24,7 +24,7 @@ function App() {
   return (
     <BrowserRouter>
       <Container>
-        <Header/>
+        <Header />
         <Content>
           <span style={{ display: 'inline-block' }}>
 Hi, there

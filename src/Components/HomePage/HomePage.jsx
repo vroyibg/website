@@ -6,11 +6,11 @@ import NavigationBar from './NavigationBar';
 
 const Container = styled.div`
   background-image: url("${backgroundImage}");
-  max-width:100%;
-  max-height:100%;
-  object-fit: cover;
-  height: 100vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  height: 100vh;
   flex-direction: column;
 `;
 

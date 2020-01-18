@@ -1,10 +1,11 @@
 import React from 'react';
-import linkedinLogo from '../../assests/linkedin-logo.png';
+import linkedInLogo from '../../../../assests/linkedin-logo.png';
+import Link from './Link';
 
-export function LinkedIn() {
+function LinkedIn() {
   return (
-    <a href="https://www.linkedin.com/in/haitran26/" target="#">
-      <img style={{ width: '4rem' }} src={linkedinLogo} />
-    </a>
+    <Link to="https://www.linkedin.com/in/haitran26/" logoUrl={linkedInLogo} alt="linkedIn" />
   );
 }
+
+export default LinkedIn;

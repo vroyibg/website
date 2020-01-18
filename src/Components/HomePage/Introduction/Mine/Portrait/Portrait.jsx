@@ -1,10 +1,14 @@
 import React from 'react';
-import portrait from '../../assests/portrait.jpg';
+import portrait from 'assests/portrait.jpg';
+import styled from 'styled-components';
 
-class Portrait extends React.Component {
-  render() {
-    return <img src={portrait} style={{ borderRadius: '50%', paddingBottom: '1rem' }} />;
-  }
+const Image = styled.img`
+  border-radius: 50%;
+  padding-bottom: 1rem;
+`;
+
+function Portrait() {
+  return <Image alt="portrait" src={portrait} />;
 }
 
 export default Portrait;

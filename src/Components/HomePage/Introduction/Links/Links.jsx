@@ -1,12 +1,17 @@
 import React from 'react';
-import { LinkedIn } from './LinkedIn';
-import { Github } from './Github';
+import styled from 'styled-components';
+import LinkedIn from './LinkedIn';
+import Github from './Github';
+
+const Container = styled.div``;
 
 function Links() {
   return (
-    <div>
+    <Container>
       <LinkedIn />
       <Github />
-    </div>
+    </Container>
   );
 }
+
+export default Links;

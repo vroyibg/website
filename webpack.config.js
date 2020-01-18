@@ -45,6 +45,7 @@ module.exports = (env) => {
       }),
     ],
     resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
       extensions: ['*', '.js', '.jsx'],
     },
     devtool: 'cheap-module-eavl-source-map',
